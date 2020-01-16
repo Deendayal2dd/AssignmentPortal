@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>VerifyUser</servlet-name>
+        <servlet-class>VerifyUser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SaveFaculty</servlet-name>
+        <servlet-class>SaveFaculty</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SaveQuestion</servlet-name>
+        <servlet-class>SaveQuestion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SubjectSearchResult</servlet-name>
+        <servlet-class>SubjectSearchResult</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VerifyUser</servlet-name>
+        <url-pattern>/VerifyUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SaveFaculty</servlet-name>
+        <url-pattern>/SaveFaculty</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SaveQuestion</servlet-name>
+        <url-pattern>/SaveQuestion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SubjectSearchResult</servlet-name>
+        <url-pattern>/SubjectSearchResult</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
